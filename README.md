@@ -25,7 +25,7 @@ O projeto usa o [`next/font`](https://nextjs.org/docs/app/building-your-applicat
 - [Prisma](https://www.prisma.io/) -> Utilizada para o nosso ORM do banco de dados
 
 # Iniciando o Projeto
-- Rode o comando: ```bash npx migrate dev``` para criar o banco e criar as tabelas.
+- Rode o comando: `npx migrate dev` para criar o banco e criar as tabelas.
 
 
 
