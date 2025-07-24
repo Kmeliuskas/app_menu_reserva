@@ -7,7 +7,7 @@ interface PropsCorpoPagina  {
 
 export default function CorpoPagina(props: PropsCorpoPagina) {
     return (
-        <div>
+        <div className={props.className}>
             {props.children}
         </div>
     )
