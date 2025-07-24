@@ -6,7 +6,7 @@ export default function PaginaEsperaDigital() {
         <div>
             {/* Cabeçalho padrão para as páginas do site online */}
             <Header />
-            <CorpoPagina>
+            <CorpoPagina className={"bg-red-500"}>
                 <h1>Teste</h1>
             </CorpoPagina>
         </div>
