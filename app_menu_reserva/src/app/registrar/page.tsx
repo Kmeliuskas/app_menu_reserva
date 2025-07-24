@@ -42,7 +42,7 @@ export default function PaginaRegistro() {
     }
 
     return (
-        <div className="bg-[url(/imagens/img_fundo_pg_login.png)] flex justify-center items-center object-cover object-top-left h-screen">
+        <div className="bg-[url(/imagens/img_fundo_pg_login.png)] flex justify-center items-center object-cover object-top-left min-h-screen">
 
             <section className="mx-auto w-full md:w-150 bg-[#2B2925] shadow-lg/30 rounded-xl p-6 flex flex-col justify-center items-center">
 
