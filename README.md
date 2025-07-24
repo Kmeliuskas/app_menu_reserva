@@ -1,45 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Este é um projeto criado em [Next.js](https://nextjs.org) e inicializado com o comando [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Primeiros Passos
 
-First, run the development server:
+Primeiro, execute o servidor da aplicação:
 
 ```bash
 npm run dev
-# or
+# Ou
 yarn dev
-# or
+# Ou
 pnpm dev
-# or
+# Ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) de dentro do seu browser para ver a aplicação rodando.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página no diretório `src/app/page.tsx`. a página é atualizada automaticamente conforme você for editando e salvando o arquivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto usa o [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para automatizar o carregamento das fontes no projeto.
 
-## Learn More
+## PROJETO VAI SER FEITO UTILIZANDO AS SEGUINTES BIBLIOTECAS
+- [Iconify](https://iconify.design/) -> Utilizada para icones no projeto
+- [Prisma](https://www.prisma.io/) -> Utilizada para o nosso ORM do banco de dados
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-#PROJETO VAI SER FEITO UTILIZANDO AS SEGUINTES BIBLIOTECAS
-#iconify -> PARA OS ICONES biblioteca vasta de icones
-PRISMA -> PARA O ORM DO BANCO DE DADOS
-teste Jayson
+# Iniciando o Projeto
+- Rode o comando: ```bash npx migrate dev``` para criar o banco e criar as tabelas.
 
 
 
