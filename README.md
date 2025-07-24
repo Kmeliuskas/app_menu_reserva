@@ -39,6 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 #PROJETO VAI SER FEITO UTILIZANDO AS SEGUINTES BIBLIOTECAS
 #iconify -> PARA OS ICONES biblioteca vasta de icones
 PRISMA -> PARA O ORM DO BANCO DE DADOS
+teste Jayson
 
 
 
