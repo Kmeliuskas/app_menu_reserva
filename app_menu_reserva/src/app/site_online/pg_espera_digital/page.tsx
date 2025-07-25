@@ -7,7 +7,7 @@ export default function PaginaEsperaDigital() {
             {/* Cabeçalho padrão para as páginas do site online */}
             <Header />
             <CorpoPagina className="relative bg-[url(/imagens/cafe_manha_escuro_1.png)] min-h-screen flex justify-center items-center bg-no-repeat bg-cover bg-top">
-                <div className="absolute inset-0 bg-[#2a2a22]/60 z-0"></div> {/* Overlay com #2a2a22 */}
+                <div className="absolute inset-0 bg-[#2a2a22]/40 z-0"></div> {/* Overlay com #2a2a22 */}
                 <div className="backdrop-blur-xs text-center border border-red-500 w-100 md:w-250 h-100 flex borde">
                    <form className="flex flex-col">
                    <label className="text-white">Nome Completo</label>
