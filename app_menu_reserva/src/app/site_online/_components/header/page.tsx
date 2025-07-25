@@ -33,9 +33,9 @@ export function Header() {
                     <nav>
                         <ul className="flex gap-2">
                             <li className={`${pathname === "/site_online/pg_produtos" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/site_online/pg_produtos"}>-NOSSOS PRODUTOS-</Link></li>
-                            <li className={`${pathname === "/site_online/pg_restaurentes" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/"}>-RESTAURANTES-</Link></li>
+                            {/* <li className={`${pathname === "/site_online/pg_restaurentes" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/"}>-RESTAURANTES-</Link></li> */}
                             <li className={`${pathname === "/site_online/pg_espera_digital" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/site_online/pg_espera_digital"}>-ESPERA DIGITAL-</Link></li>
-                            <li className={`${pathname === "/site_online/pg_delivery" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/"}>-DELIVERY-</Link></li>
+                            {/* <li className={`${pathname === "/site_online/pg_delivery" ? "text-[#E2CCA6]/50" : "text-white"} hover:text-[#E2CCA6]/50 transition-colors duration-300`}><Link href={"/"}>-DELIVERY-</Link></li> */}
                         </ul>
                     </nav>
                     <nav>

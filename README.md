@@ -20,6 +20,11 @@ Você pode começar a editar a página no diretório `src/app/page.tsx`. a pági
 
 O projeto usa o [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para automatizar o carregamento das fontes no projeto.
 
+## ESTRUTURA DO BANCO DE DADOS
+Tabelas principais:
+- usuario -> Responsável por armazer o usuário para o login do dashboard (Caixa)
+- espera_digital -> Armazena informações dos clientes que irão fazer uma reserva de mesas no (SITE ONLINE)
+
 ## PROJETO VAI SER FEITO UTILIZANDO AS SEGUINTES BIBLIOTECAS
 - [Iconify](https://iconify.design/) -> Utilizada para icones no projeto
 - [Prisma](https://www.prisma.io/) -> Utilizada para o nosso ORM do banco de dados

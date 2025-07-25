@@ -14,6 +14,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//Responsável por armazenar informações dos usuários que vão poder conectar no dashboard do caixa
 model Usuario {
   id             Int      @id @default(autoincrement())
   nome_completo  String
@@ -27,3 +28,70 @@ model Usuario {
   cep            String
   pais           String
 }
+
+//responsável por armazenar informações dos clientes que irão fazer uma reserva de mesas ONLINE
+//Campos com ? significa que não são obrigatórios informar
+model Espera_Digital {
+  id             Int     @id @default(autoincrement())
+  nome_completo  String
+  email          String  @unique
+  dia_da_reserva String
+  horario        String
+  local          String
+  qtd_pessoas    String
+  telefone       String?
+  observacoes    String?
+}
+
+// model Categoria_Produto {
+//   id             Int       @id @default(autoincrement())
+//   nome_categoria String
+//   produtos       Produto[] //Vai ser uma lista de Produto
+// }
+
+// model Produto {
+//   id           Int               @id @default(autoincrement())
+//   nome_produto String
+//   descricao    String?
+//   preco        Decimal
+//   disponivel   Boolean           @default(true)
+//   imagem       String?
+//   categoriaId  Int
+
+//   categoria    Categoria_Produto @relation(fields: [categoriaId], references: [id])
+// }
+
+// model Mesa {
+//   id         Int    @id @default(autoincrement())
+//   numero     Int
+//   status     String @default("livre")
+//   qtdLugares Int
+
+//   pedidos Pedido[]
+// }
+
+// model Pedido {
+//   id         Int      @id @default(autoincrement())
+//   tipo       String
+//   status     String   @default("pendente")
+//   mesaId     Int?
+//   mesa       Mesa?    @relation(fields: [mesaId], references: [id])
+//   dataPedido DateTime @default(now())
+
+//   itens ItemPedido[]
+// }
+
+// model ItemPedido {
+//   id         Int     @id @default(autoincrement())
+//   pedidoId   Int
+//   produtoId  Int
+//   quantidade Int     
+//   preco      Decimal 
+//   obs        String? 
+
+//   pedido  Pedido  @relation(fields: [pedidoId], references: [id])
+
+//   produto Produto @relation(fields: [produtoId], references: [id])
+
+  
+// }

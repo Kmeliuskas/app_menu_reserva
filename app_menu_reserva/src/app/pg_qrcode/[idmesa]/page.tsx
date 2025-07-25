@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import CorpoPagina from "../_components/corpoPagina/page";
 import Header from "../_components/header/page";
 import SliderDeCards from "../_components/Slider/SliderDeCards";
+import Rodape from "../_components/rodape/page";
 
 
 export default async function ProdutoPage({ params, }: {
@@ -66,12 +67,14 @@ export default async function ProdutoPage({ params, }: {
   ];
 
   return (
-    <div>
+
+    //Trocado a div padrao para h-svh flex e flex-col para ter a ocupação total da tela e ser responsiva entre dispositivos
+    <div className="h-dvh flex flex-col">
       {/* HEADER PADRÃO PARA A PÁGINA DE QRCODES (FOCADO NO MOBILE) */}
       <Header />
 
       {/* COMPONENTE PADRÃO PARA PODERMOS CRIAR AS PÁGINAS */}
-      <CorpoPagina className="relative bg-[url(/imagens/jantar_natalino.jpg)] min-h-screen bg-cover bg-top">
+      <CorpoPagina className="relative bg-[url(/imagens/jantar_natalino.jpg)] h-svh bg-cover bg-top">
 
         {/* CAMADA DE ESCURECIMENTO */}
         <div className="absolute inset-0 bg-[#2B2B23]/75 z-0"></div>
@@ -87,13 +90,14 @@ export default async function ProdutoPage({ params, }: {
           </section>
 
           {/* SESSÃO DO FORMULÁRIO */}
-          <section className="flex justify-center">
+          <section className="flex justify-center mb-2">
             <SliderDeCards grupos={dados} />
           </section>
-
         </main>
-
       </CorpoPagina>
+
+      {/* RODAPÉ PADRÃO PARA USAR NO MOBILE PÁGINA QRCODE */}
+      <Rodape />
     </div>
   );
 }
