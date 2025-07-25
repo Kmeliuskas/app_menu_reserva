@@ -23,6 +23,7 @@ O projeto usa o [`next/font`](https://nextjs.org/docs/app/building-your-applicat
 ## PROJETO VAI SER FEITO UTILIZANDO AS SEGUINTES BIBLIOTECAS
 - [Iconify](https://iconify.design/) -> Utilizada para icones no projeto
 - [Prisma](https://www.prisma.io/) -> Utilizada para o nosso ORM do banco de dados
+- [Swiper](https://swiperjs.com/) -> Utilizada para podermos fazer um slider de varias maneiras
 
 # Iniciando o Projeto
 - Rode o comando: `npx migrate dev` para criar o banco e criar as tabelas.
