@@ -4,10 +4,10 @@ import { Usuario } from "@/generated/prisma";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Dashboard() {
+export default function PaginaPrincipal() {
 
     //VARIAVEIS PARA A MUDANÇA DE ESTADO DOS OBJETOS, 
-    const [usuario, setUsuario]       = useState<Usuario | null>(null);
+    const [usuario, setUsuario] = useState<Usuario | null>(null);
     const [carregando, setCarregando] = useState(true);
 
     //VARIAVEL UTILIZADA PARA REDIRECIONARMOS O USUÁRIO PARA O LOGIN CASO NÃO TENHA USUÁRIO
@@ -30,9 +30,13 @@ export default function Dashboard() {
     }
 
     return (
-        <div>
-            <h1>Bem-vindo, {usuario?.nome_usuario}!</h1>
-            {/* Mostra os dados do usuário aqui */}
+        <div className="flex bg-white">
+
+            <main>
+                <h1>Bem-vindo, {usuario?.nome_usuario}!</h1>
+                {/* Mostra os dados do usuário aqui */}
+            </main>
         </div>
     );
 }
+

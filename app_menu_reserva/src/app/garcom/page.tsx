@@ -1,0 +1,109 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+
+export default function PaginaGarcom() {
+    return (
+        <div className="relative min-h-screen">
+
+            {/* IMAGEM RESPONSÁVEL PELO FUNDO */}
+            <div className="absolute inset-0 bg-[url('/imagens/bg.jpg')] bg-cover bg-center z-0"></div>
+
+            {/* CABEÇALHO DA PÁGINA */}
+            <header className="relative z-1 p-8 text-center border-b border-white">
+                <h1 className="text-white text-2xl font-bold">
+                    GERENCIAMENTO DE PEDIDOS GARÇOM
+                </h1>
+            </header>
+
+            {/* DEVIDINDO A TELA SEMPRE EM 2 PARTES LADO ESQUERDO PEDIDOS NOVOS/ LADO DIREITO PEDIDOS FINALIZADOS */}
+            <section className="relative grid grid-cols-2 min-h-screen">
+
+                {/* LADO ESQUERDO (PEDIDOS NOVOS) */}
+                <div className="">
+                    <h1 className="text-center text-[#E2CCA6] font-semibold  text-4xl py-3 border-b">NOVOS PEDIDOS</h1>
+
+                    {/* NOVOS PEDIDOS VAO VIR EM FORMATO DE CARD*/}
+                    <div className="p-2 grid grid-cols-2 gap-2">
+
+                        {/* CARD 1 */}
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Coca colas</li>
+                                <li className="">2 Refris 500ML</li>
+                                <li className="">1 Suco natural Laranja</li>
+                            </ul>
+                        </div>
+
+                        {/* CARD 2  */}
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Coca colas</li>
+                                <li className="">2 Refris 500ML</li>
+                                <li className="">1 Suco natural Laranja</li>
+                            </ul>
+                        </div>
+
+                        {/* CARD 3  */}
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Coca colas</li>
+                                <li className="">2 Refris 500ML</li>
+                                <li className="">1 Suco natural Laranja</li>
+                            </ul>
+                        </div>
+
+                        {/* CARD 4  */}
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Coca colas</li>
+                                <li className="">2 Refris 500ML</li>
+                                <li className="">1 Suco natural Laranja</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {/* LINHA DIVISÓRIA DO MEIO */}
+                <div className="absolute top-0 bottom-0 left-1/2 w-2 bg-white z-10" />
+
+
+                {/* LADO DIREITO (PEDIDOS FINALIZADOS) */}
+                <div className="">
+                    <h1 className="text-center text-[#E2CCA6] font-semibold  text-4xl py-3 border-b">PEDIDOS FINALIZADOS</h1>
+
+                    {/* NOVOS PEDIDOS VAO VIR EM FORMATO DE CARD*/}
+                    <div className="p-2 pl-4 grid grid-cols-1 gap-2">
+
+                        {/* CARD 1 */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 2  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 3  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 4  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    );
+}

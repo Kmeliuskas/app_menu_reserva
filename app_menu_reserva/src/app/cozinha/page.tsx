@@ -1,3 +1,5 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+
 export default function PaginaCozinha() {
     return (
         <div className="relative min-h-screen">
@@ -20,7 +22,7 @@ export default function PaginaCozinha() {
                     <h1 className="text-center text-[#E2CCA6] font-semibold  text-4xl py-3 border-b">NOVOS PEDIDOS</h1>
 
                     {/* NOVOS PEDIDOS VAO VIR EM FORMATO DE CARD*/}
-                    <div className="p-2 grid grid-cols-2 justify-items-center gap-2">
+                    <div className="p-2 grid grid-cols-2 gap-2">
 
                         {/* CARD 1 */}
                         <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
@@ -41,17 +43,61 @@ export default function PaginaCozinha() {
                         </div>
 
                         {/* CARD 3  */}
-                        <div className="w-full min-h-60 border bg-white rounded-lg"></div>
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 1233333 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Hamburgueres da casa sem cebola e com adicional de 2 hamburugers</li>
+                                <li className="">2 porções de batata frita</li>
+                            </ul>
+                        </div>
+
+                        {/* CARD 4  */}
+                        <div className="w-full min-h-60 bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="text-center text-2xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 1233333 / Mesa: 13</h1>
+                            <ul className="py-2 list-disc pl-8 ">
+                                <li className="">2 Hamburgueres da casa sem cebola e com adicional de 2 hamburugers</li>
+                                <li className="">2 porções de batata frita</li>
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
 
-                {/* LINHA DIVISÓRIA */}
+                {/* LINHA DIVISÓRIA DO MEIO */}
                 <div className="absolute top-0 bottom-0 left-1/2 w-2 bg-white z-10" />
 
 
                 {/* LADO DIREITO (PEDIDOS FINALIZADOS) */}
-                <div className="">Lado direito</div>
+                <div className="">
+                    <h1 className="text-center text-[#E2CCA6] font-semibold  text-4xl py-3 border-b">PEDIDOS FINALIZADOS</h1>
+
+                    {/* NOVOS PEDIDOS VAO VIR EM FORMATO DE CARD*/}
+                    <div className="p-2 pl-4 grid grid-cols-1 gap-2">
+
+                        {/* CARD 1 */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 2  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 3  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                        {/* CARD 4  */}
+                        <div className="w-full  bg-white rounded-lg shadow-md shadow-white/50">
+                            <h1 className="flex justify-center text-center text-3xl p-2 text-[#E2CCA6] font-semibold uppercase text-shadow-sm text-shadow-[#E2CCA6]">Pedido: 123 / Mesa: 13 <Icon icon={"fluent:arrow-right-12-filled"} color="green" className="mx-2" /> <span className="text-red-500">Finalizado</span></h1>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </section>
         </div>
